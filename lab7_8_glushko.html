@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lab7_8_glushko.css">
+    <title>Тортики & Тістечка</title>
+</head>
+<body>
+    <header>
+       
+    <input type="radio" name="category" id="filter-all" checked>
+    <input type="radio" name="category" id="filter-pie">
+    <input type="radio" name="category" id="filter-roll">
+    <input type="radio" name="category" id="filter-cookie">
+    <input type="radio" name="category" id="filter-cupcake">
+    <input type="radio" name="category" id="filter-cake">
+
+    <header>
+        <h1>Тортики & Тістечка</h1>
+    </header>
+
+    <div class="filters-container">
+        <div class="filter-buttons">
+            <label for="filter-pie" class="filter-btn">Пиріг</label>
+            <label for="filter-roll" class="filter-btn">Рулет</label>
+            <label for="filter-cookie" class="filter-btn">Сирники</label>
+            <label for="filter-cupcake" class="filter-btn">Тістечко</label>
+            <label for="filter-cake" class="filter-btn">Торт</label>
+            <label for="filter-all" class="filter-btn">Скинути фільтр</label>
+        </div>
+
+        <div class="calories-section">
+            <span class="calories-label">Калорії у порції</span>
+            <span class="calories-info">Від 0 до 400 ккал</span>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="recipe-card" data-category="cupcake">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/1200x/be/d4/21/bed421acd2d96f9e57710e76c835dcea.jpg" alt="Мафін" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Тістечко:</div>
+                <div class="recipe-title">Мафін</div>
+                <div class="recipe-calories">Калорії у порції 305 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cake">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/28/98/ba/2898ba9fc51797e07c6d6318c7d47c0c.jpg" alt="Зірочка" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Торт:</div>
+                <div class="recipe-title">Зірочка</div>
+                <div class="recipe-calories">Калорії у порції 523 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="roll">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/41/f8/4e/41f84eed80ae78fd36431a79114251c9.jpg" alt="Травичка" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Рулет:</div>
+                <div class="recipe-title">Травичка</div>
+                <div class="recipe-calories">Калорії у порції 380 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cake">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/1200x/b8/ab/fa/b8abfa86a66061df693fb23c0bc2a594.jpg" alt="Сметанковий" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Торт:</div>
+                <div class="recipe-title">Сметанковий</div>
+                <div class="recipe-calories">Калорії у порції 265 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cupcake">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/1200x/f6/55/59/f65559db8239d57c6ca4c0181cb6bcdd.jpg" alt="Лимонне тістечко" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Тістечко:</div>
+                <div class="recipe-title">Лимонне </div>
+                <div class="recipe-calories">Калорії у порції 438 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="pie">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/17/9d/86/179d86c4d8c3c2936f1744fd45a34383.jpg" alt="Вишневий пиріг" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Пиріг:</div>
+                <div class="recipe-title">Вишні</div>
+                <div class="recipe-calories">Калорії у порції 298 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cookie">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/1200x/33/3d/24/333d2438e4c23fd8dee4fe88c5d09a91.jpg" alt="Три ягоди" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Сирники:</div>
+                <div class="recipe-title">Три ягоди</div>
+                <div class="recipe-calories">Калорії у порції 450 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="roll">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/99/e2/5d/99e25d15b957b2b368241092fdf16f89.jpg" alt="Шоколадний рулет" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Рулет:</div>
+                <div class="recipe-title">Шоколадний з горіхами</div>
+                <div class="recipe-calories">Калорії у порції 410 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cupcake">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/8f/46/e0/8f46e0b768b07abfa1767f22e2b16df5.jpg" alt="Літнє" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Тістечко:</div>
+                <div class="recipe-title">Літнє</div>
+                <div class="recipe-calories">Калорії у порції 348 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="pie">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/1200x/10/b5/33/10b533095169462ae4743da3b8cf023c.jpg" alt="Яблучний пиріг" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Пиріг:</div>
+                <div class="recipe-title">Яблучний</div>
+                <div class="recipe-calories">Калорії у порції 320 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cookie">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/3f/3f/e6/3f3fe65661c7deb1a129228f9d6fad73.jpg" alt="З шоколадом" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Сирники:</div>
+                <div class="recipe-title">З шоколадом</div>
+                <div class="recipe-calories">Калорії у порції 380 ккал</div>
+            </div>
+        </div>
+
+        <div class="recipe-card" data-category="cake">
+            <div class="recipe-image-container">
+                <img src="https://i.pinimg.com/736x/f3/8b/50/f38b50dd8db6d8de0ec9e0b321bea909.jpg" alt="Їжачок" class="recipe-image">
+            </div>
+            <div class="recipe-divider"></div>
+            <div class="recipe-content">
+                <div class="recipe-category">Торт:</div>
+                <div class="recipe-title">Їжачок</div>
+                <div class="recipe-calories">Калорії у порції 600 ккал</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                Контакти: <a href="mailto:tortik@smakota.ua">tortik@smakota.ua</a>
+            </div>
+            <div class="footer-copyright">
+                © 2019 Smakota
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>
